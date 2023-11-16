@@ -1,0 +1,13 @@
+The Fractional Knapsack Problem and the 0/1 Knapsack Problem are two variants of the knapsack problem, but they have distinct characteristics.
+
+1] Fractional Knapsack Problem:
+
+In the Fractional Knapsack Problem, items can be broken down into fractions. That means you are allowed to take a fraction of an item, and the objective is to maximize the total value in the knapsack while respecting the weight constraint.
+This problem is solved using a greedy strategy, where items are selected based on their value-to-weight ratio in descending order. The algorithm takes fractions of items if needed to fill the knapsack optimally.
+The time complexity of the greedy algorithm for fractional knapsack is O(n log n), where n is the number of items, due to the sorting step.
+
+2] 0/1 Knapsack Problem:
+
+In the 0/1 Knapsack Problem, items cannot be divided. You either include the whole item in the knapsack, or you exclude it entirely.
+This problem is typically solved using dynamic programming. The dynamic programming approach involves constructing a table where the entry at each cell represents the maximum value that can be obtained with a certain weight capacity and a certain subset of items.
+The time complexity of the dynamic programming solution for the 0/1 knapsack problem is O(nW), where n is the number of items and W is the maximum weight capacity of the knapsack.
